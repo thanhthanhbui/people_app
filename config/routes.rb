@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'addresses/new_address'
+  get 'addresses/edit_address'
+  get 'addresses/show_address'
+  get 'addresses/show_address'
+  get 'addresses/edit_address'
+  root 'static_people#home'
+  get '/about', to: 'static_people#about'
+  resources :people
 end
